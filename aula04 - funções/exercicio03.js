@@ -8,18 +8,23 @@ Código Condição de pagamento:
 4 - Acima de duas vezes, preço normal de etiqueta maiis juros de 10%
 */
 
+function calcularDesconto(valor, desconto){
+    return (valor - (valor * (desconto / 100)));
+}
+
+function calcularJuros(valor, juros){
+    return (valor + (valor * (juros / 100)));
+}
+
 const precoEtiqueta = 100;
-const formaDePagamento = 1;
+const formaDePagamento = 2;
 
 if (formaDePagamento === 1) {
-    console.log(precoEtiqueta - (precoEtiqueta * 0.1));
+    console.log(calcularDesconto(precoEtiqueta, 10));
 } else if (formaDePagamento === 2) {
-    console.log(precoEtiqueta - (precoEtiqueta * 0.15));
+    console.log(calcularDesconto(precoEtiqueta, 15));
 } else if (formaDePagamento === 3) {
     console.log(precoEtiqueta);
 } else {
-    console.log(precoEtiqueta + (precoEtiqueta * 0.1));
+    console.log(calcularJuros(precoEtiqueta, 10));
 }
-
-
-

@@ -20,13 +20,13 @@ const IMC = peso / Math.pow(altura,2);
 //Math.pow (biblioteca utilitários de funções matemáticas)
 
 if (IMC < 18.5) {
-    console.log('Você está Abaixo do peso')
+    console.log('Você está Abaixo do peso');
 } else if (IMC >= 18.5 && IMC <= 25) {
-    console.log('Você está com Peso normal')
+    console.log('Você está com Peso normal');
 } else if (IMC >= 25 && IMC <= 30) {
-    console.log('Você está Acima do peso')
+    console.log('Você está Acima do peso');
 } else if (IMC >= 30 && IMC <= 40) {
-    console.log('Você está Obeso')
+    console.log('Você está Obeso');
 } else {
-    console.log('Você está com Obesidade Grave')
+    console.log('Você está com Obesidade Grave');
 }
