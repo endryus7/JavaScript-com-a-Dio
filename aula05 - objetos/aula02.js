@@ -1,5 +1,5 @@
 
-class pessoa { // class é a definição do que deve ser o objeto
+class Pessoa { // class é a definição do que deve ser o objeto
     nome;
     idade;
     altura;
@@ -10,12 +10,12 @@ class pessoa { // class é a definição do que deve ser o objeto
     }
 }
 
-const endryus = new pessoa();
+const endryus = new Pessoa();
 endryus.nome = 'Endryus';
 endryus.idade = 23;
 endryus.altura = 1.80;
 
-const joao = new pessoa();
+const joao = new Pessoa();
 joao.nome = 'João Vitor';
 joao.idade = 21;
 joao.altura = 1.70;
@@ -25,7 +25,7 @@ joao.descrever();
 
 
 /*
-const pessoa = { // Instancia é uma ocorrencia do objeto
+const Pessoa = { // Instancia é uma ocorrencia do objeto
     nome: 'Endryus Montezano',
     idade: 23,
     altura: 1.80,

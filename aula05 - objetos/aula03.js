@@ -1,5 +1,5 @@
 
-class pessoa {
+class Pessoa {
     nome;
     idade;
     altura;
@@ -17,8 +17,8 @@ class pessoa {
     }
 }
 
-const endryus = new pessoa('Endryus', 23, 1.80);
-const joao = new pessoa('João Vitor', 21, 1.70);
+const endryus = new Pessoa('Endryus', 23, 1.80);
+const joao = new Pessoa('João Vitor', 21, 1.70);
 
 endryus.descrever();
 joao.descrever();
