@@ -13,35 +13,14 @@ const {gets, print} = require('./funcoes-auxiliares'); // importa
     Saída:98
 */
 
-const numerosSorteados = [];
-
-for (let i = 0; i < 5; i++) {
-    const Sorteado = gets(); 
-    numerosSorteados.push(Sorteado);
-}
-
+const quantidadeDeAlunos = gets();
 let maiorValor = 0 
 
-for (let i = 0; i < numerosSorteados.length; i++) {
-    const Sorteado = numerosSorteados[i]; 
+for (let i = 0; i < quantidadeDeAlunos; i++) {
+    const Sorteado = gets(); 
     if (Sorteado > maiorValor) {
         maiorValor = Sorteado;
     }
 }
 
 print(maiorValor);
-
-
-// console.log(funcoes)
-// console.log(funcoes.gets())
-
-/*
-const pessoa = {
-    nome: 'endryus'
-};
-*/
-
-
-// Os dois tem a mesma função (object destructuring)
-// const {nome} = pessoa; 
-// const nome = pessoa.nome;
