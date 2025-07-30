@@ -5,7 +5,7 @@
     undefuned
     number
     string
-    synbo1
+    symbol
 */
 
 // object
